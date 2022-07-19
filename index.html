@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
+    <title>Document</title>
+  </head>
+  <body>
+    <span class="wst-help"></span>
+    <button class="wts-btn wts-btn-primary wts-buttom-side">Valider</button>
+    <input type="text" class="wts-form-control wts-time-picker" />
+    <input type="text" class="wts-form-control wts-form-control-chef" />
+    <button class="wts-btn wts-btn-overreduce">hover</button>
+    <div class="wts-alert wts-alert-secondary">hello</div>
+    <div class="wts-card-cart">
+      <div class="wts-card-cart-header">
+        <span class="wts-budget-primary">RECOMMENDER</span>
+        <h1 class="wts-card-cart-title">Le bien est a louer</h1>
+      </div>
+      <p class="wts-card-cart-body">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro,
+        veritatis ad magnam culpa aliquam quae, expedita molestias, nostrum
+        harum atque ipsa quas non vel eaque totam soluta nisi labore a?
+      </p>
+    </div>
+    <div class="wts-form-check"></div>
+    <span class="wts-badge wts-bg-primary"
+      ><span class="wst-time-clock mx-1"></span> hello</span
+    >
+    <input type="checkbox" class="" />
+
+    <label class="wts-form-check">
+      <input type="radio" id="html" name="radio" />
+      <span class="circule">HTML</span>
+    </label>
+    <div class="wts-bg-primary">
+      <span class="wst-checked">xxxxxxxx</span>
+    </div>
+    <button class="wts-btn-circule">
+      <span class="wst-like-white"
+        ><span class="path1"></span><span class="path2"></span
+      ></span>
+    </button>
+
+    <div class="wts-form-check">
+      <input
+        class="wts-form-check-input"
+        type="radio"
+        name="flexRadioDefault"
+        id="flexRadioDefault1"
+      />
+      <label class="wts-form-check-label" for="flexRadioDefault1">
+        Default radio
+      </label>
+    </div>
+
+    <div class="wts-form-check">
+      <input type="checkbox" class="wts-checkbox" />
+      <label class="wts-form-check-label" for="flexCheckDefault">
+        Default checkbox
+      </label>
+    </div>
+
+    <div class="wts-form-check wts-form-switch">
+      <input
+        class="wts-form-check-input"
+        type="checkbox"
+        id="flexSwitchCheckDefault"
+      />
+      <label class="wts-form-check-label" for="flexSwitchCheckDefault"
+        >Default switch checkbox input</label
+      >
+    </div>
+
+    <div class="wts-form-check">
+      <input
+        class="wts-form-check-input"
+        type="checkbox"
+        value=""
+        id="flexCheckDisabled"
+      />
+      <label class="form-check-label" for="flexCheckDisabled">
+        Disabled checkbox
+      </label>
+    </div>
+
+    <div class="form-box">
+      <div class="button-box d-flex">
+        <div id="btn"></div>
+        <button type="button" class="toggle-btn" onclick="leftClick()">
+          <span class="wts-badge-mode">Mode</span>
+
+          Left
+        </button>
+        <button type="button" class="toggle-btn" onclick="rightClick()">
+          <span class="wts-badge-mode">Mode</span>
+          Right
+        </button>
+      </div>
+    </div>
+<div class="container">
+  <div class="row">
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+      Launch demo modal
+    </button>
+    
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            ...
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <!-- Button trigger modal -->
+    <script src="index.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row d-flex justify-content-between">
+        <div class="col-md-3">
+
+        </div>
+        <div class="col-md-3 " style="margin-left: 256px;">
+          <form>
+            <div class="wts-input-group">
+              <input
+                type="search"
+                class="wts-form-control wts-search"
+                aria-label="Search"
+                aria-describedby="search-addon"
+              />
+            </div>
+          </form>
+        </div>
+        <div class="col-md-3 " >
+          <div class="form-box">
+            <div class="button-box d-flex">
+              <div id="btn"></div>
+              <button
+                type="button"
+               
+                class="toggle-btn listing-btn"
+                onclick="leftClick()"
+              >
+                Listing card
+              </button>
+              <button
+                type="button"
+            
+                class="toggle-btn listing-btn"
+                onclick="rightClick()"
+              >
+                Listing tableau
+              </button>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-md-3 ">
+            <button class="wts-btn wts-btn-primary">Ajouter un nouveau Bien</button>
+        </div>
+      </div> 
+      <div class="row wts-row">
+        <div class="d-flex">
+          <div class="col-md-10 wts-card-body">
+            <div class="wts-card-img">
+              <img src="./img/a.png" alt="" />
+            </div>
+            <div class="wts-card-info">
+              <div style="display: flex">
+                <span class="wts-card-map">ewid 156845.459852.123545</span>
+                <div class="d-flex">
+                  <span class="wts-card-link"> </span>
+                  <span class="wts-card-second-link"> Autopilot activé ! </span>
+                </div>
+              </div>
+              <div style="margin-top: 12px">
+                <h1 class="wts-card-title">
+                  Superbe appartement Lausanne - 3.5 pièces
+                </h1>
+              </div>
+              <div class="peice">
+                <span class="wts-card-piece"
+                  >Chemin du Petit-Flon 50, Lausanne 1018</span
+                >
+              </div>
+  
+              <div class="d-flex">
+                <div class="peice">
+                  <span class="wts-info-peice">3.5 Pièces</span>
+                </div>
+                <div class="etage">
+                  <span class="wts-info-etage">3.5 Pièces</span>
+                </div>
+                <div class="surface">
+                  <span class="wts-info-surface">3.5 Pièces</span>
+                </div>
+              </div>
+  
+              <div class="d-flex">
+                <div class="peice">
+                  <span class="wts-info-peice">3.5 Pièces</span>
+                </div>
+                <div class="etage">
+                  <span class="wts-info-etage">3.5 Pièces</span>
+                </div>
+                <div class="surface">
+                  <span class="wts-info-surface">3.5 Pièces</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2" style="margin-top: 24px; margin-right: 44px">
+            <div>
+              <span class="wts-card-locataire">Locataires</span>
+            </div>
+            <div class="wts-locataire-card">
+              <img src="./img/a.png" class="wts-locataire-img" alt="" />
+              <div style="margin-top: 18px; margin-left: 18px">
+                <h3 class="wts-locataire-heaser">Vald Enerst</h3>
+  
+                <span class="wts-locataire-info">  </span>
+  
+                <span class="wts-locataire-date"> 079 222 21 12 </span>
+              </div>
+            </div>
+  
+            <div class="wts-locataire-card">
+              <img src="./img/a.png" class="wts-locataire-img" alt="" />
+              <div style="margin-top: 18px; margin-left: 18px">
+                <h3 class="wts-locataire-heaser">Vald Enerst</h3>
+  
+                <span class="wts-locataire-info">  </span>
+  
+                <span class="wts-locataire-date"> 079 222 21 12 </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div style="margin-left: 25px; margin-top: 35px" class="col-md-8 d-flex">
+          <span class="wts-bg-success wts-card-footer-first">Loué</span>
+          <span class="wts-bg-success wts-card-footer">Bail en signature</span>
+          <span class="bg-warning wts-card-footer">Bail à signer</span>
+          <span class="bg-warning wts-card-footer">12 candidats à traiter</span>
+  
+          <span class="bg-warning wts-card-footer">23 demandes de visites</span>
+          <span class="bg-danger wts-card-footer">Documents manquants</span>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="bs-example bs-example-tabs" role="tabpanel" data-example-id="togglable-tabs">
+          <ul id="myTab" class="nav nav-tabs" role="tablist">
+              <li role="presentation" class="active"><a href="#home" id="home-tab" role="tab" data-toggle="tab" aria-controls="home" aria-expanded="true">Featured</a></li>
+              <li role="presentation"><a href="#profile" role="tab" id="profile-tab" data-toggle="tab" aria-controls="profile" aria-expanded="false">Top viewed</a></li>
+              <li role="presentation"><a href="#rating" id="rating-tab" role="tab" data-toggle="tab" aria-controls="rating" aria-expanded="true">Top Rating</a></li>
+              <li role="presentation"><a href="#imdb" role="tab" id="imdb-tab" data-toggle="tab" aria-controls="imdb" aria-expanded="false">Recently Added</a></li>
+          </ul>
+          <div id="myTabContent" class="tab-content">
+              <div role="tabpanel" class="tab-pane fade active in" id="home" aria-labelledby="home-tab">
+                  <div class="w3_agile_featured_movies">
+                          <div class="col-md-2 w3l-movie-gride-agile">
+                              <a href="{{ route('series.show',$serie->id) }}" class="hvr-shutter-out-horizontal"><img src="{{ $serie->url }}" title="album-name" class="img-responsive" alt=" " />
+                                  <div class="w3l-action-icon"><i class="fa fa-play-circle" aria-hidden="true"></i></div>
+                              </a>
+                              <div class="mid-1 agileits_w3layouts_mid_1_home">
+                                  <div class="w3l-movie-text">
+                                      <h6 style=" white-space: nowrap;
+                                      overflow: hidden;
+                                      text-overflow: ellipsis;"><a href="{{ route('series.show',$serie->id) }}">{{ $serie->title }}</a></h6>
+                                  </div>
+                                  <div class="mid-2 agile_mid_2_home">
+                                      <p>{{ $serie->created_at->year }}</p>
+                                      <div class="block-stars">
+                                          <ul class="w3l-ratings">
+                                              <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                              <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                              <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                              <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                              <li><a href="#"><i class="fa fa-star-half-o" aria-hidden="true"></i></a></li>
+                                          </ul>
+                                      </div>
+                                      <div class="clearfix"></div>
+                                  </div>
+                              </div>
+                              <div class="ribben">
+                                  <p>NEW</p>
+                              </div>
+                          </div>
+                      <div class="clearfix"> </div>
+                  </div>
+              </div>
+              <div role="tabpanel" class="tab-pane fade" id="profile" aria-labelledby="profile-tab">
+                      <div class="col-md-2 w3l-movie-gride-agile">
+                          <a href="{{ route('series.show',$serie->id) }}" class="hvr-shutter-out-horizontal"><img src="{{ $serie->url }}" title="album-name" class="img-responsive" alt=" " />
+                              <div class="w3l-action-icon"><i class="fa fa-play-circle" aria-hidden="true"></i></div>
+                          </a>
+                          <div class="mid-1 agileits_w3layouts_mid_1_home">
+                              <div class="w3l-movie-text">
+                                  <h6 style=" white-space: nowrap;
+                                  overflow: hidden;
+                                  text-overflow: ellipsis;"><a href="{{ route('series.show',$serie->id) }}">{{$serie->title  }}</a></h6>
+                              </div>
+                              <div class="mid-2 agile_mid_2_home">
+                                  <p>{{ $serie->created_at->year }}</p>
+                                  <div class="block-stars">
+                                      <ul class="w3l-ratings">
+                                          <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                          <li><a href="#"><i class="fa fa-star-half-o" aria-hidden="true"></i></a></li>
+                                          <li><a href="#"><i class="fa fa-star-o" aria-hidden="true"></i></a></li>
+                                          <li><a href="#"><i class="fa fa-star-o" aria-hidden="true"></i></a></li>
+                                          <li><a href="#"><i class="fa fa-star-o" aria-hidden="true"></i></a></li>
+                                      </ul>
+                                  </div>
+                                  <div class="clearfix"></div>
+                              </div>
+                          </div>
+                          <div class="ribben">
+                              <p>NEW</p>
+                          </div>
+                      </div>
+      
+                  <div class="clearfix"> </div>
+              </div>
+              <div role="tabpanel" class="tab-pane fade" id="rating" aria-labelledby="rating-tab">
+                  
+                      <div class="col-md-2 w3l-movie-gride-agile">
+                          <a href="{{ route('series.show',$serie->id) }} class="hvr-shutter-out-horizontal"><img src="{{ $serie->url }}" title="album-name" class="img-responsive" alt=" " />
+                              <div class="w3l-action-icon"><i class="fa fa-play-circle" aria-hidden="true"></i></div>
+                          </a>
+                          <div class="mid-1 agileits_w3layouts_mid_1_home">
+                              <div class="w3l-movie-text">
+                                  <h6 style=" white-space: nowrap;
+                                  overflow: hidden;
+                                  text-overflow: ellipsis;"><a href="{{ route('series.show',$serie->id) }}">{{ $serie->title }}</a></h6>
+                              </div>
+                              <div class="mid-2 agile_mid_2_home">
+                                  <p>{{ $serie->created_at->year }}</p>
+                                  <div class="block-stars">
+                                      <ul class="w3l-ratings">
+                                          <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                          <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                          <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                          <li><a href="#"><i class="fa fa-star-half-o" aria-hidden="true"></i></a></li>
+                                          <li><a href="#"><i class="fa fa-star-o" aria-hidden="true"></i></a></li>
+                                      </ul>
+                                  </div>
+                                  <div class="clearfix"></div>
+                              </div>
+                          </div>
+                          <div class="ribben">
+                              <p>{{ $serie->acteur }}</p>
+                          </div>
+                      </div>
+                  <div class="clearfix"> </div>
+              </div>
+              <div role="tabpanel" class="tab-pane fade" id="imdb" aria-labelledby="imdb-tab">
+                      <div class="col-md-2 w3l-movie-gride-agile">
+                          <a href="" class="hvr-shutter-out-horizontal"><img src="" title="album-name" class="img-responsive" alt=" " />
+                              <div class="w3l-action-icon"><i class="fa fa-play-circle" aria-hidden="true"></i></div>
+                          </a>
+                          <div class="mid-1 agileits_w3layouts_mid_1_home">
+                              <div class="w3l-movie-text">
+                                  <h6 style=" white-space: nowrap;
+                                  overflow: hidden;
+                                  text-overflow: ellipsis;"><a href="{{ route('series.show',$serie->id) }}">{{ $serie->title }}</a></h6>
+                              </div>
+                              <div class="mid-2 agile_mid_2_home">
+                                  <p></p>
+                                  <div class="block-stars">
+                                      <ul class="w3l-ratings">
+                                          <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                          <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                          <li><a href="#"><i class="fa fa-star-half-o" aria-hidden="true"></i></a></li>
+                                          <li><a href="#"><i class="fa fa-star-o" aria-hidden="true"></i></a></li>
+                                          <li><a href="#"><i class="fa fa-star-o" aria-hidden="true"></i></a></li>
+                                      </ul>
+                                  </div>
+                                  <div class="clearfix"></div>
+                              </div>
+                          </div>
+                          <div class="ribben">
+                              <p>NEW</p>
+                          </div>
+                      </div>
+                  @endforeach
+                  <div class="clearfix"> </div>
+              </div>
+          </div>
+      </div>
+  </div>                               V                 G                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
+                                               
+</div>
+    <script src="index.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
